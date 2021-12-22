@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-inter text-[#383535]
+  }
+  .form {
+    @apply px-9 py-12 rounded-2xl shadow-form border
+  }
+  .input {
+    @apply flex flex-col gap-y-3
+  }
+  .button-detail-active {
+    @apply w-full text-white font-bold bg-yellow-primary rounded-lg py-5
+  }
+  .button-detail-inactive {
+    @apply w-full bg-[#FEF5D9] font-bold text-yellow-primary rounded-lg py-5
+  }
+  table {
+    @apply border-collapse
+  }
+}
